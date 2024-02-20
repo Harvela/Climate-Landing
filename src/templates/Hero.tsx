@@ -1,4 +1,3 @@
-import { Button } from 'flowbite-react';
 import React from 'react';
 
 import { Background } from '../background/Background';
@@ -6,74 +5,50 @@ import { Background } from '../background/Background';
 const Hero: React.FC = () => {
   return (
     <Background color="">
-      <div id="home" className="flex h-[90vh] flex-col">
-        <div className=" flex flex-row items-center justify-between p-16">
-          <div className="w-[50%]">
-            <h1 className="mt-4 text-[16px] font-semibold text-white lg:text-[20px]">
-              Donnez vie à vos projets en collaborant avec des experts de la
-              technologie.
-            </h1>
-            <h2 className="my-[30px] text-[10px] text-white/80 md:text-[15px]">
-              Nous concevons des applications web et mobile et offrons des
-              conseils stratégiques, incluant des études de faisabilité
-              approfondies, pour garantir la réussite de vos projets
-              technologiques.
-            </h2>
-            <div className="mt-[20px] flex flex-col gap-5 md:flex-row">
-              <Button
-                color="white"
-                className="animate-infinite h-[45px] animate-wiggle bg-[#FFE7C9] text-black md:self-end"
-              >
-                Demande une analyse gratuite
-              </Button>
+      <div id="home" className="flex h-[90vh] w-full flex-col">
+        <div className="relative h-[100vh] w-[50%]">
+          <img
+            src="/assets/images/home/background.jpg"
+            alt="Hero"
+            className="h-full w-full"
+          />
+          <div className="absolute left-0 top-0 h-full w-full bg-[#063421]/60 p-16">
+            <div className="mt-16 flex flex-col gap-8 text-white">
+              <h2 className="text-[36px] font-semibold">
+                On peut soit Avoir des dechets plastiques, poluer nos villes et
+                oceans
+              </h2>
+              <p className="text-lg">
+                50000 tonnes de plastiques, de salete ou de matiere premiere ou
+                de matiere premieres et matieres{' '}
+              </p>
+              <div className="flex flex-row justify-between">
+                <button className="h-[40px] w-[40%] rounded-lg border-2 border-white px-4">
+                  Voir notre travail
+                </button>
+                <img
+                  src="/assets/images/home/fleche.png"
+                  alt="Hero"
+                  className="h-32 w-32 items-end"
+                />
+              </div>
             </div>
-          </div>
-          <div className="flex flex-row items-center gap-4">
-            <div className="flex flex-col items-center gap-4">
-              <img
-                src="/assets/images/home/docta1.jpg"
-                alt="Hero"
-                className="h-[140px] w-[180px] rounded-lg"
-              />
-              <img
-                src="/assets/images/home/docta3.jpg"
-                alt="Hero"
-                className="h-[140px] w-[180px] rounded-lg"
-              />
-            </div>
-            <img
-              src="/assets/images/home/docta2.jpg"
-              alt="Hero"
-              className="h-[140px] w-[180px] rounded-lg"
-            />
           </div>
         </div>
-        <div className="flex flex-row items-center justify-between bg-[#002240] px-16 py-4">
-          <img
-            src="/assets/images/home/doctabyte.png"
-            alt="Hero"
-            className="h-10 w-20"
-          />
-          <img
-            src="/assets/images/home/doctabyte.png"
-            alt="Hero"
-            className="h-10 w-20"
-          />
-          <img
-            src="/assets/images/home/doctabyte.png"
-            alt="Hero"
-            className="h-10 w-20"
-          />
-          <img
-            src="/assets/images/home/doctabyte.png"
-            alt="Hero"
-            className="h-10 w-20"
-          />
-          <img
-            src="/assets/images/home/doctabyte.png"
-            alt="Hero"
-            className="h-10 w-20"
-          />
+
+        <div className="absolute right-0 top-0 h-full w-[50%] bg-primary-300 p-16">
+          <div className="mt-16 flex flex-col gap-8 text-white">
+            <img
+              src="/assets/images/home/chaise.png"
+              alt="Hero"
+              className="m-auto"
+            />
+            <p className="text-lg">
+              Ou construire des{' '}
+              <span className="font-bold text-[#FFA1C8]">Chaises</span> <br />{' '}
+              Et sauver la planete
+            </p>
+          </div>
         </div>
       </div>
     </Background>

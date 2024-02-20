@@ -41,7 +41,7 @@ const NavbarGlobal: React.FC<NavbarProps> = () => {
           width: '100%',
           zIndex: 40,
           top: 0,
-          backgroundColor: 'rgba(0, 34, 64, 0.9)',
+          backgroundColor: 'rgba(6, 52, 33, 0.2)',
         }}
       >
         <Navbar.Brand href="#">
@@ -59,6 +59,7 @@ const NavbarGlobal: React.FC<NavbarProps> = () => {
             smooth
             spy
             offset={-200}
+            className="text-white"
           >
             Accueil
           </Link>
@@ -68,35 +69,30 @@ const NavbarGlobal: React.FC<NavbarProps> = () => {
             smooth
             spy
             offset={-100}
+            className="text-white"
           >
-            Nos projets
+            Qui sommes-nous?
           </Link>
           <Link
             activeClass="text-white font-bold border-b-2 border-white"
             to="services"
             smooth
             spy
+            className="text-white"
           >
-            Nos services
-          </Link>
-          <Link
-            activeClass="text-white font-bold border-b-2 border-white"
-            to="team"
-            smooth
-            spy
-          >
-            Notre equipe
-          </Link>
-          <Link
-            activeClass="text-secondary-900 font-bold border-b-2 border-secondary-900"
-            to="pricing"
-            smooth
-            spy
-            offset={-100}
-          >
-            Contact
+            Nos produits
           </Link>
         </Navbar.Collapse>
+        <Link
+          activeClass="text-secondary-900 font-bold border-b-2 border-secondary-900"
+          to="pricing"
+          smooth
+          spy
+          offset={-100}
+          className="rounded-lg bg-white px-4 py-1 text-sm font-semibold text-primary-200"
+        >
+          Se connecter
+        </Link>
       </Navbar>
     </Flowbite>
   );
